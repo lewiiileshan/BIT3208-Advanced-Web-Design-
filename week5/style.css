@@ -180,6 +180,67 @@ nav .nav-links a:hover { color: #fff; }
     margin-bottom: 20px;
 }
 
+.pw-strength {
+    height: 6px;
+    background: #E5E7EB;
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.pw-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    transition: width 0.25s, background-color 0.25s;
+}
+.pw-label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+    transition: color 0.25s;
+}
+.pw-reqs {
+    list-style: none;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.pw-reqs li {
+    padding: 2px 0 2px 18px;
+    position: relative;
+    color: #6B7280;
+    transition: color 0.2s;
+}
+.pw-reqs li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E5E7EB;
+    transition: background 0.2s;
+}
+.pw-reqs li.req-met {
+    color: #065F46;
+}
+.pw-reqs li.req-met::before {
+    background: #059669;
+}
+.pw-reqs li.req-miss {
+    color: #6B7280;
+}
+.pw-reqs li.req-miss::before {
+    background: #E5E7EB;
+}
+.pw-match {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.pw-match-ok  { color: #059669; }
+.pw-match-err { color: #DC2626; }
+
 @media (max-width: 600px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
     .patient-row { flex-direction: column; }
