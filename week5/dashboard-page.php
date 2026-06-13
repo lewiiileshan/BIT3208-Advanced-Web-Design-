@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard — Hospital Ward</title>
+    <title>Dashboard — Savara Hospital ward</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="dashboard.php" class="brand">🏥 Hospital Ward</a>
+    <a href="dashboard.php" class="brand">Savara Hospital ward</a>
     <div>
         <a href="add-patient.php">+ Admit Patient</a>
         <a href="logout.php">Logout</a>
